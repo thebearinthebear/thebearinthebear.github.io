@@ -226,13 +226,11 @@ footer {
 }
 
 footer .copyrights {
-    position: fixed;
-    bottom: 0;
-    left: 20px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    font-size: 0.8em;
+    margin-bottom: 5px;
+    left: 0;
 }
 
 footer .logo img {
@@ -247,15 +245,6 @@ footer .logo img {
     header {
         flex-wrap: wrap;
         padding: 0;
-    }
-
-    footer .copyrights {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        left: 0;
     }
 
     header .space {
