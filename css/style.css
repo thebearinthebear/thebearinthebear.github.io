@@ -1,0 +1,281 @@
+/* -- General settings -------- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", Arial, serif;
+    font-weight: 300;
+    color: #FFF;
+    vertical-align: baseline;
+    max-width: 1900px;
+    background-color: #222222;
+}
+
+.spa {
+    background: url("../img/grid.png") 50% 50% no-repeat black;
+    background-size: cover;
+    height: 100%;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: #ffffff;
+    border-bottom: 0px solid #D9D9D9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2b91f1;
+    border-bottom: 0px solid #D9D9D9;
+}
+
+a.dashed {
+    color: #000;
+    border-bottom: 1px dashed #D9D9D9;
+}
+
+a:hover.dashed {
+    color: #39C;
+    border-bottom: 1px dashed #D9D9D9;
+}
+
+a.none {
+    color: #ffffff;
+    border-bottom: 1px solid #D9D9D9;
+    text-decoration: none;
+}
+
+a:hover.none {
+    color: #2b91f1;
+    border-bottom: 1px solid #2b91f1;
+}
+
+a.normal {
+    color: #0c4f72;
+    border-bottom: 1px solid rgba(12, 79, 114, 0.2);
+    text-decoration: none;
+}
+
+a:hover.normal {
+    color: #d04000;
+    border-bottom: 1px solid rgba(208, 64, 0, 0.2);
+}
+
+* a:link, * a:link *, * a:visited, * a:visited * {
+    transition: color 0.55s ease-out, background 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
+/*.header .menu {*/
+/*position: absolute;*/
+/*top: 10%;*/
+/*margin: 0 20px 0 20px;*/
+/*}*/
+
+/*.header .menu .links {*/
+/*font-size: 190%;*/
+/*}*/
+
+/*.header .menu .links .sale {*/
+/*color: #ff5757;*/
+/*font-size: 70%;*/
+/*vertical-align: top;*/
+/*padding-left: 3px;*/
+/*}*/
+
+/*.header .menu .social {*/
+/*font-size: 100%;*/
+/*padding-top: 10px;*/
+/*}*/
+
+/* -- Content -------- */
+
+.fotorama {
+    opacity: 0.4;
+}
+
+.info {
+    width: 100%;
+}
+
+.info .about {
+    margin: 0 auto;
+    padding: 150px 10px;
+    max-width: 950px;
+    font-size: 24px;
+}
+
+.info .about p {
+    padding: 80px 10px;
+    line-height: 1.5;
+}
+
+.info .albums {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    page-break-after: always;
+}
+
+.info .albums .row {
+    display: table-row;
+}
+
+.info .albums .row .cell {
+    display: table-cell;
+    max-width: 255px;
+    max-height: 255px;
+    padding: 1px;
+    border: 0px solid #eee;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+
+/* -- Header -------- */
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 1em;
+    justify-content: space-around;
+    z-index: 2;
+    height: max-content;
+    align-items: center;
+}
+
+header > * {
+    height: 100%;
+}
+
+header .logo {
+    width: 20%;
+    text-align: center;
+    height: max-content;
+}
+
+header .space {
+    width: 5%;
+}
+
+header .logo img {
+    max-width: 60%;
+}
+
+header .menu {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+header .menu li a {
+    text-transform: uppercase;
+}
+
+
+/* -- Menu -------- */
+
+article.menu {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    width: 100%;
+}
+
+article.menu .links a {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+
+/* -- Footer -------- */
+
+footer {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*padding: 1em 0;*/
+}
+
+footer .copyrights {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
+footer .logo img {
+    max-width: 100px;
+}
+
+#year {
+    margin-right: 0.3em;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    footer .copyrights {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        left: 0;
+    }
+
+    header .space {
+        display: none;
+    }
+
+    article.menu .links a {
+        font-size: 2em;
+    }
+
+
+    header .logo {
+        width: 100%;
+    }
+
+    header .menu {
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+}
+
+
