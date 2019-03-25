@@ -199,14 +199,18 @@ header .menu li a {
 article.menu {
     display: flex;
     position: absolute;
-    z-index: 2;
     justify-content: center;
-    width: 100%;
+    width: 50%;
+}
+
+article.menu .links {
+    z-index: 2;
+
 }
 
 article.menu .links a {
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 1.7em;
 }
 
 
@@ -241,6 +245,7 @@ footer .logo img {
     margin-right: 0.3em;
 }
 
+
 @media (max-width: 600px) {
     header {
         flex-wrap: wrap;
@@ -252,9 +257,16 @@ footer .logo img {
     }
 
     article.menu .links a {
-        font-size: 2em;
+        font-size: 1em;
     }
 
+    header .logo img {
+        max-width: 50%;
+    }
+
+    article.menu {
+        margin-top: 25px;
+    }
 
     header .logo {
         width: 100%;
@@ -263,7 +275,50 @@ footer .logo img {
     header .menu {
         width: 100%;
         flex-wrap: wrap;
+    }
 
+    header .menu li a {
+        font-size: 1em;
+    }
+
+    footer .logo img {
+        max-width: 120px;
+    }
+
+    footer .copyrights {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 411px) {
+    header .menu li a {
+        font-size: 1.2em;
+    }
+
+    article.menu .links a {
+        font-size: 1.5em;
+    }
+
+    article.menu {
+        width: 60%;
+    }
+
+    footer .logo img {
+        max-width: 150px;
+    }
+
+    footer .copyrights {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 320px) {
+    header .menu li a {
+        font-size: 0.9em;
+    }
+
+    article.menu .links a {
+        font-size: 1em;
     }
 }
 
